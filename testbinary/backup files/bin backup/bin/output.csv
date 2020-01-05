@@ -1,0 +1,212 @@
+ADD1, ADD, Passed, mjnwlc, (Normal Case) 349756 + 2387468
+ADD2, ADD, Passed, mjnwlc, 0xFFFFFFFF + 0x2
+ADD3, ADD, Passed, mjnwlc, 0x70000000 + 0x0FFFFFFF
+ADD4, ADD, Passed, mjnwlc, 0x7FFFFFFF + 0x7FFFFFFF
+ADD5, ADD, Passed, mjnwlc, 0x8000000 + 0x1
+ADD6, ADD, Passed, mjnwlc, 0xFFFFFFFF + 0x80000002
+ADD7, ADD, Passed, mjnwlc, 0x8000000 + 0x80000000
+ADD8, ADD, Passed, mjnwlc, 0x7FFEFFFF + 0x7FFEFFFF
+ADDI1, ADDI, Passed, mjnwlc, (Normal Case) 3586911 + 47812
+ADDI2, ADDI, Passed, mjnwlc, 0xFFFFFFFF + 0x2
+ADDI3, ADDI, Passed, mjnwlc, 0x7FFFFFFF + 0x7FFF
+ADDI4, ADDI, Passed, mjnwlc, 0xFFFFFFFF + 0x8000
+ADDI5, ADDI, Passed, mjnwlc, 0x8000000 + 0x8000
+ADDIU1, ADDIU, Passed, mjnwlc, (Normal Case) 5454435 + 12495
+ADDIU2, ADDIU, Passed, mjnwlc, 0xFFFFFFFF + 0x2
+ADDIU3, ADDIU, Passed, mjnwlc, 0x7000000 + 0xFFFF
+ADDIU4, ADDIU, Passed, mjnwlc, 0x7FFFFFFF + 0x7FFF
+ADDIU5, ADDIU, Passed, mjnwlc, 0x8000000 + 0x1
+ADDIU6, ADDIU, Passed, mjnwlc, 0XFFFFFFFF + 0xFFFF
+ADDU1, ADDU, Passed, mjnwlc, (Normal Case) 567812 + 418141
+ADDU2, ADDU, Passed, mjnwlc, 0xFFFFFFFF + 0x2
+ADDU3, ADDU, Passed, mjnwlc, 0x7000000 + 0x0FFFFFFF
+ADDU4, ADDU, Passed, mjnwlc, 0x7FFFFFFF + 0x7FFFFFFF
+ADDU5, ADDU, Passed, mjnwlc, 0x8000000 + 0x1
+ADDU6, ADDU, Passed, mjnwlc, 0xFFFFFFFF + 0x80000002
+ADDU7, ADDU, Passed, mjnwlc, 0x8000000 + 0x80000001
+AND1, AND, Passed, mjnwlc, 0x0 & 0x0
+AND2, AND, Passed, mjnwlc, 0xAAAAAAAA & 0x55555555
+AND3, AND, Passed, mjnwlc, 0xFFFFFFFFF & 0xFFFFFFFF
+ANDI1, ANDI, Passed, mjnwlc, 0x0 & 0x0
+ANDI2, ANDI, Passed, mjnwlc, 0xAAAAAAAA & 0x5555
+ANDI3, ANDI, Passed, mjnwlc, 0xFFFFFFFF & 0xFFFF
+BEQ1, BEQ, Passed, mjnwlc, Positive Branch with Delay Slot Check
+BEQ2, BEQ, Passed, mjnwlc, Negative Branch followed by No Branch with Delay Slot Check
+BEQ3, BEQ, Passed, mjnwlc, Branch Out of Bounds (Negative)
+BEQ4, BEQ, Passed, mjnwlc, Branch out of bounds (Positive)
+BGEZ1, BGEZ, Passed, mjnwlc, Positive Branch (GZ) + Positive Branch (EZ) + Delay Slot Check
+BGEZ2, BGEZ, Passed, mjnwlc, Negative Branch (GZ) + Negative Branch (EZ) + No Branch + Delay Slot Check
+BGEZ3, BGEZ, Passed, mjnwlc, Jump Out of Bounds Negative
+BGEZ4, BGEZ, Passed, mjnwlc, Jump Out of Bounds Positive
+BGEZAL1, BGEZAL, Passed, mjnwlc, Positive Branch (GZ) + Positive Branch (EZ) + Delay Slot Check + Link Check
+BGEZAL2, BGEZAL, Passed, mjnwlc, Negative Branch (GZ) + Negative Branch (EZ) + No Branch + Delay Slot Check + Link Check
+BGEZAL3, BGEZAL, Passed, mjnwlc, Jump Out of Bounds Negative
+BGEZAL4, BGEZAL, Passed, mjnwlc, Jump Out of Bounds Positive
+BGTZ1, BGTZ, Passed, mjnwlc, Negative Branch + No Branch + Delay Slot Check
+BGTZ2, BGTZ, Passed, mjnwlc, Positive Branch + No Branch + Delay Slot Check
+BGTZ3, BGTZ, Passed, mjnwlc, Jump Out of Bounds Negative
+BGTZ4, BGTZ, Passed, mjnwlc, Jump Out of Bounds Positive
+BLEZ1, BLEZ, Passed, mjnwlc, Positive Branch (LZ) + Positive Branch (EZ) + Delay Slot Check
+BLEZ2, BLEZ, Passed, mjnwlc, Negative Branch (LZ) + Negative Branch (EZ) + No Branch + Delay Slot Check
+BLEZ3, BLEZ, Passed, mjnwlc, Jump Out of Bounds Negative
+BLTZ1, BLTZ, Passed, mjnwlc, Positive Branch + No Branch + Delay Slot Check
+BLTZ2, BLTZ, Passed, mjnwlc, Negative Branch + No Branch + Delay Slot Checkl
+BLTZ3, BLTZ, Passed, mjnwlc, Jump Out of Memory Negative
+BLTZ4, BLTZ, Passed, mjnwlc, Jump Out of Bounds Positive
+BLTZAL1, BLTZAL, Passed, mjnwlc, Positive Branch + No Branch + Delay Slot Check + Link Check
+BLTZAL2, BLTZAL, Passed, mjnwlc, Negative Branch + No Branch + Delay Slot Check + Link Check
+BLTZAL3, BLTZAL, Passed, mjnwlc, Branch Out of Bounds Negative
+BLTZAL4, BLTZAL, Passed, mjnwlc, Branch Out of Bounds Positive
+BNE1, BNE, Passed, mjnwlc, Positive Branch + Delay Slot Check
+BNE2, BNE, Passed, mjnwlc, Negative Branch + No Branch + Delay Slot Check
+BNE3, BNE, Passed, mjnwlc, Jump Out of Bounds Negative
+BNE4, BNE, Passed, mjnwlc, Jump Out of Bounds Positive
+DIV1, DIV, Passed, mjnwlc, (Regular Division) 1967556744/605365266 then LO + HI
+DIV2, DIV, Passed, mjnwlc, (Signed Division) -7/-3
+DIV3, DIV, Passed, mjnwlc, (Signed Division) -7/3
+DIV4, DIV, Passed, mjnwlc, (Signed Division) 7/-3
+DIV5, DIV, Passed, mjnwlc, Divide by 0
+DIVU1, DIVU, Passed, mjnwlc, (Regular Division) 1967556744/605365266
+DIVU2, DIVU, Passed, mjnwlc, (Interpreted Signed Division) -7/-3 
+DIVU3, DIVU, Passed, mjnwlc, (Interpreted Signed Division) -7/3
+DIVU4, DIVU, Passed, mjnwlc, (Interpreted Signed Division) 7/-3
+DIVU5, DIVU, Passed, mjnwlc, Divide by 0
+GETC1, GETC, Passed, mjnwlc, Getchar all loads (A-G EOF H)
+GETC2, GETC, Passed, mjnwlc, Getchar unaligned LH
+GETC3, GETC, Passed, mjnwlc, Getchar unaligned LHU
+GETC4, GETC, Passed, mjnwlc, Getchar unaligned LB
+GETC5, GETC, Passed, mjnwlc, Getchar unaligned LBU
+J1, J, Passed, mjnwlc, Large Jump
+J2, J, Passed, mjnwlc, Small Jump
+JAL1, JAL, Passed, mjnwlc, Large Jump
+JAL2, JAL, Passed, mjnwlc, Small Jump
+JALR1, JALR, Passed, mjnwlc, JALR 0 Store in R6 Settle Delay Slot
+JALR2, JALR, Passed, mjnwlc, JALR R1 R1 = 0x10000010 Default Store in 31
+JR1, JR, Passed, mjnwlc, JR 0 Settle Delay Slot
+JR2, JR, Passed, mjnwlc, JR R1 R1 = 0x10000010 Delay Slot Check
+LB1, LB, Passed, mjnwlc, Store and load 0xCD (-51)
+LB2, LB, Passed, mjnwlc, LB out of bounds
+LB3, LB, Passed, mjnwlc, LB from first instruction
+LBU1, LBU, Passed, mjnwlc, Store and load CD (205)
+LBU2, LBU, Passed, mjnwlc, LBU out of bounds
+LBU3, LBU, Passed, mjnwlc, LBU from first instruction
+LH1, LH, Passed, mjnwlc, Store and load ABCD (-21555)
+LH2, LH, Passed, mjnwlc, LH out of bounds
+LH3, LH, Passed, mjnwlc, LH from first instruction
+LH4, LH, Passed, mjnwlc, LH unaligned
+LHU1, LHU, Passed, mjnwlc, Store and load ABCD (43981)
+LHU2, LHU, Passed, mjnwlc, LHU out of bounds
+LHU3, LHU, Passed, mjnwlc, LHU from first instruction
+LHU4, LHU, Passed, mjnwlc, LHU unaligned
+LUI1, LUI, Passed, mjnwlc, 0x0
+LUI2, LUI, Passed, mjnwlc, 0xFFFF
+LW1, LW, Passed, mjnwlc, Store and load ABCDABCD (-1412584499)
+LW2, LW, Passed, mjnwlc, LW out of bounds
+LW3, LW, Passed, mjnwlc, LW from first instruction
+LW4, LW, Passed, mjnwlc, LW unaligned
+LWL1, LWL, Passed, mjnwlc, LWL out of bounds
+LWLLWR1, LWLLWR, Passed, mjnwlc, Normal load word
+LWLLWR2, LWLLWR, Passed, mjnwlc, Load bytes 1-4
+LWLLWR3, LWLLWR, Passed, mjnwlc, Load bytes 2-5
+LWLLWR4, LWLLWR, Passed, mjnwlc, Load bytes 3-6
+LWR1, LWR, Passed, mjnwlc, LWR out of bounds
+MULT1, MULT, Passed, mjnwlc, (Unsigned) 0x7FFFFFFF * 0x31415926 ADDU HI + LO
+MULT2, MULT, Passed, mjnwlc, (Signed) 0xFACEBAFF * 0XDADDB0DD ADDU HI + LO
+MULT3, MULT, Passed, mjnwlc, (Signed) 14285 * -7142 ADDU HI + LO
+MULT4, MULT, Passed, mjnwlc, (Signed) 0XACEDCODE * 0X23 ADDU HI + LO
+MULT5, MULT, Passed, mjnwlc, (Signed) 0x7FFFFFFF * 0x80000000 SLL HI by 29 bits
+MULTU1, MULTU, Passed, mjnwlc, (Unsigned) 0x7FFFFFFF * 0x31415926 HI + LO
+MULTU2, MULTU, Passed, mjnwlc, (Interpreted Signed) 0xFACEBAFF * 0xDADDB0DD ADDU HI + LO
+MULTU3, MULTU, Passed, mjnwlc, (Interpreted Signed) 14285 * -7412 ADDU HI + LO
+MULTU4, MULTU, Passed, mjnwlc, (Interpreted Signed) 0xACEDC0DE * 0X23 ADDU HI + LO
+OR1, OR, Passed, mjnwlc, 0x0 | 0x0
+OR2, OR, Passed, mjnwlc, 0xAAAAAAAA | 0x55555555
+OR3, OR, Passed, mjnwlc, 0x0FFFFFFF | 0x0FFFFFFF
+ORI1, ORI, Passed, mjnwlc, 0x0 | 0x0
+ORI2, ORI, Passed, mjnwlc, 0xAAAAAAAA | 0x5555
+ORI3, ORI, Passed, mjnwlc, 0x0FFFFFFF | 0xFFFF
+PUTC1, PUTC, Passed, mjnwlc, Putchar XXX
+REG1, REG, Passed, mjnwlc, Reading and Writing Registers
+SB1, SB, Passed, mjnwlc, Store and load CD (-51)
+SB2, SB, Passed, mjnwlc, SB out of bounds
+SH1, SH, Passed, mjnwlc, Store and load ABCD (-21555)
+SH2, SH, Passed, mjnwlc, SH out of bounds
+SH3, SH, Passed, mjnwlc, SH unaligned
+SLL1, SLL, Passed, mjnwlc, 0x0 << 16
+SLL2, SLL, Passed, mjnwlc, 0xFFFF << 16
+SLL3, SLL, Passed, mjnwlc, 0xFFFFFFFF << 16
+SLL4, SLL, Passed, mjnwlc, 0xFFFFFFFF << 31
+SLLV1, SLLV, Passed, mjnwlc, 0x0 << 16
+SLLV2, SLLV, Passed, mjnwlc, 0xFFFF << 16
+SLLV3, SLLV, Passed, mjnwlc, 0xFFFFFFFF << 16
+SLLV4, SLLV, Passed, mjnwlc, 0xFFFFFFFF << 31
+SLLV5, SLLV, Passed, mjnwlc, 0xFFFFFFFF << 10000 (same as shifting by 1 0000)
+SLT1, SLT, Passed, mjnwlc, 0xFFFFFFFE < 0xFFFFFFFF
+SLT2, SLT, Passed, mjnwlc, 0xFFFFFFFF < 0x80000000
+SLT3, SLT, Passed, mjnwlc, 0x7FFFFFFF < 0x80000000
+SLT4, SLT, Passed, mjnwlc, 0x7FFFFFFF < 0x7FFFFFFE
+SLT5, SLT, Passed, mjnwlc, 0xFFFFFFFF < 0xFFFFFFFF
+SLTI1, SLTI, Passed, mjnwlc, 0xFFFFFFFE < 0xFFFF
+SLTI2, SLTI, Passed, mjnwlc, 0xFFFFFFFF < 0x8000
+SLTI3, SLTI, Passed, mjnwlc, 0x7FFFFFFF < 0xFFFF
+SLTI4, SLTI, Passed, mjnwlc, 0x7FFFFFFF < 0x7FFF
+SLTI5, SLTI, Passed, mjnwlc, 0x7FFF < 0x7FFF
+SLTI6, SLTI, Passed, mjnwlc, 0x7FFE < 0x7FFF
+SLTI7, SLTI, Passed, mjnwlc, 0xFFFF < 0xFFFF
+SLTIU1, SLTIU, Passed, mjnwlc, 0xFFFFFFFE < 0xFFFF
+SLTIU2, SLTIU, Passed, mjnwlc, 0xFFFFFFFF < 0x8000
+SLTIU3, SLTIU, Passed, mjnwlc, 0x7FFFFFFF < 0xFFFF
+SLTIU4, SLTIU, Passed, mjnwlc, 0x7FFFFFFF < 0x7FFF
+SLTIU5, SLTIU, Passed, mjnwlc, 0x7FFF < 0x7FFF
+SLTIU6, SLTIU, Passed, mjnwlc, 0x7FFE < 0x7FFF
+SLTIU7, SLTIU, Passed, mjnwlc, 0xFFFF < 0xFFFF
+SLTU1, SLTU, Passed, mjnwlc, 0xFFFFFFFE < 0xFFFFFFFF
+SLTU2, SLTU, Passed, mjnwlc, 0xFFFFFFFF < 0x80000000
+SLTU3, SLTU, Passed, mjnwlc, 0x7FFFFFFF < 0x80000000
+SLTU4, SLTU, Passed, mjnwlc, 0x7FFFFFFF < 0x7FFFFFFE
+SLTU5, SLTU, Passed, mjnwlc, 0xFFFFFFFF < 0xFFFFFFFF
+SRA1, SRA, Passed, mjnwlc, 0x8000000 >> 16
+SRA2, SRA, Passed, mjnwlc, 0x7FFFFFFF >> 16
+SRA3, SRA, Passed, mjnwlc, 0xFFFFFFFF >> 31
+SRAV1, SRAV, Passed, mjnwlc, 0x8000000 >> 16
+SRAV2, SRAV, Passed, mjnwlc, 0x7FFFFFFF >> 16
+SRAV3, SRAV, Passed, mjnwlc, 0xFFFFFFFF >> 32
+SRAV4, SRAV, Passed, mjnwlc, 0x7FFF0000 >> 10000 (same as shifting by 16 bits)
+SRL1, SRL, Passed, mjnwlc, 0x0 >> 16
+SRL2, SRL, Passed, mjnwlc, 0xFFFF0000 >> 16
+SRL3, SRL, Passed, mjnwlc, 0xFFFFFFFF >> 16
+SRL4, SRL, Passed, mjnwlc, 0xFFFFFFFF >> 31
+SRLV1, SRLV, Passed, mjnwlc, 0x0 >> 16
+SRLV2, SRLV, Passed, mjnwlc, 0xFFFF0000 >> 16
+SRLV3, SRLV, Passed, mjnwlc, 0xFFFFFFFF >> 16
+SRLV4, SRLV, Passed, mjnwlc, 0xFFFFFFFF >> 31
+SRLV5, SRLV, Passed, mjnwlc, 0xFFFFFFFF >> 10000 (same as shifting 16 bits)
+SUB1, SUB, Passed, mjnwlc, 0x1 - 0x2
+SUB2, SUB, Passed, mjnwlc, 0x1 - 0xFFFFFFFF
+SUB3, SUB, Passed, mjnwlc, 0xFFFFFFFF - 0xFFFFFFFE
+SUB4, SUB, Passed, mjnwlc, 0xFFFFFFFF - 0x1
+SUB5, SUB, Passed, mjnwlc, 0x80000000 - 0x1
+SUB6, SUB, Passed, mjnwlc, 0x0 - 0x80000000
+SUB7, SUB, Passed, mjnwlc, 0x80000000 - 0x7FFFFFFF
+SUBU1, SUBU, Passed, mjnwlc, 0x2 - 0x1
+SUBU2, SUBU, Passed, mjnwlc, 0x1 - 0xFFFFFFFF
+SUBU3, SUBU, Passed, mjnwlc, 0xFFFFFFFF - 0xFFFFFFFE
+SUBU4, SUBU, Passed, mjnwlc, 0xFFFFFFFF - 0x1
+SUBU5, SUBU, Passed, mjnwlc, 0x80000000 - 0x1
+SUBU6, SUBU, Passed, mjnwlc, 0x0 - 0x80000001
+SUBU7, SUBU, Passed, mjnwlc, 0x80000000 - 0x7FFFFFFF
+SW1, SW, Passed, mjnwlc, Store and load ABCDABCD (-1412584499)
+SW2, SW, Passed, mjnwlc, SW out of bounds
+SW3, SW, Passed, mjnwlc, SW unaligned
+XOR1, XOR, Passed, mjnwlc, 0x0 ^ 0x0
+XOR2, XOR, Passed, mjnwlc, 0xAAAAAAAA ^ 0x55555555
+XOR3, XOR, Passed, mjnwlc, 0xFFFFFFFF ^ 0xFFFF
+XORI1, XORI, Passed, mjnwlc, 0x0 ^ 0x0
+XORI2, XORI, Passed, mjnwlc, 0xAAAAAAAA & 0x5555
+XORI3, XORI, Passed, mjnwlc, 0xFFFFFFFF ^ 0xFFFF
+zzaddiutest, zzaddiutes, Failed, mjnwlc, addiu test
+245, 1231
+zzaddiutest, zzaddiutes, Failed, mjnwlc, addiu test
+245, 1231
+.subutest, .subutes, Failed, mjnwlc, kjasfnkn
+245, 123

@@ -1,0 +1,203 @@
+ADD1,ADD,mjnwlc,(Normal Case) 349756 + 2387468
+ADD2,ADD,mjnwlc,0xFFFFFFFF + 0x2
+ADD3,ADD,mjnwlc,0x70000000 + 0x0FFFFFFF
+ADD4,ADD,mjnwlc,0x7FFFFFFF + 0x7FFFFFFF
+ADD5,ADD,mjnwlc,0x8000000 + 0x1
+ADD6,ADD,mjnwlc,0xFFFFFFFF + 0x80000002
+ADD7,ADD,mjnwlc,0x8000000 + 0x80000000
+ADDI1,ADDI,mjnwlc,(Normal Case) 3586911 + 47812
+ADDI2,ADDI,mjnwlc,0xFFFFFFFF + 0x2
+ADDI3,ADDI,mjnwlc,0x7FFFFFFF + 0x7FFF
+ADDI4,ADDI,mjnwlc,0xFFFFFFFF + 0x8000
+ADDI5,ADDI,mjnwlc,0x8000000 + 0x8000
+ADDIU1,ADDIU,mjnwlc,(Normal Case) 5454435 + 12495
+ADDIU2,ADDIU,mjnwlc,0xFFFFFFFF + 0x2
+ADDIU3,ADDIU,mjnwlc,0x7000000 + 0xFFFF
+ADDIU4,ADDIU,mjnwlc,0x7FFFFFFF + 0x7FFF
+ADDIU5,ADDIU,mjnwlc,0x8000000 + 0x1
+ADDIU6,ADDIU,mjnwlc,0XFFFFFFFF + 0xFFFF
+ADDU1,ADDU,mjnwlc,(Normal Case) 567812 + 418141
+ADDU2,ADDU,mjnwlc,0xFFFFFFFF + 0x2
+ADDU3,ADDU,mjnwlc,0x7000000 + 0x0FFFFFFF
+ADDU4,ADDU,mjnwlc,0x7FFFFFFF + 0x7FFFFFFF
+ADDU5,ADDU,mjnwlc,0x8000000 + 0x1
+ADDU6,ADDU,mjnwlc,0xFFFFFFFF + 0x80000002
+ADDU7,ADDU,mjnwlc,0x8000000 + 0x80000001
+AND1,AND,mjnwlc,0x0 & 0x0
+AND2,AND,mjnwlc,0xAAAAAAAA & 0x55555555
+AND3,AND,mjnwlc,0xFFFFFFFFF & 0xFFFFFFFF
+ANDI1,ANDI,mjnwlc,0x0 & 0x0
+ANDI2,ANDI,mjnwlc,0xAAAAAAAA & 0x5555
+ANDI3,ANDI,mjnwlc,0xFFFFFFFF & 0xFFFF
+BEQ1,BEQ,mjnwlc,Positive Branch with Delay Slot Check
+BEQ2,BEQ,mjnwlc,Negative Branch followed by No Branch with Delay Slot Check
+BEQ3,BEQ,mjnwlc,Branch Out of Bounds (Negative)
+BEQ4,BEQ,mjnwlc,Branch out of bounds (Positive)
+BGEZ1,BGEZ,mjnwlc,Positive Branch (GZ) + Positive Branch (EZ) + Delay Slot Check
+BGEZ2,BGEZ,mjnwlc,Negative Branch (GZ) + Negative Branch (EZ) + No Branch + Delay Slot Check
+BGEZ3,BGEZ,mjnwlc,Jump Out of Bounds Negative
+BGEZ4,BGEZ,mjnwlc,Jump Out of Bounds Positive
+BGEZAL1,BGEZAL,mjnwlc,Positive Branch (GZ) + Positive Branch (EZ) + Delay Slot Check + Link Check
+BGEZAL2,BGEZAL,mjnwlc,Negative Branch (GZ) + Negative Branch (EZ) + No Branch + Delay Slot Check + Link Check
+BGEZAL3,BGEZAL,mjnwlc,Jump Out of Bounds Negative
+BGEZAL4,BGEZAL,mjnwlc,Jump Out of Bounds Positive
+BGTZ1,BGTZ,mjnwlc,Negative Branch + No Branch + Delay Slot Check
+BGTZ2,BGTZ,mjnwlc,Positive Branch + No Branch + Delay Slot Check
+BGTZ3,BGTZ,mjnwlc,Jump Out of Bounds Negative
+BGTZ4,BGTZ,mjnwlc,Jump Out of Bounds Positive
+BLEZ1,BLEZ,mjnwlc,Positive Branch (LZ) + Positive Branch (EZ) + Delay Slot Check
+BLEZ2,BLEZ,mjnwlc,Negative Branch (LZ) + Negative Branch (EZ) + No Branch + Delay Slot Check
+BLEZ3,BLEZ,mjnwlc,Jump Out of Bounds Negative
+BLTZ1,BLTZ,mjnwlc,Positive Branch + No Branch + Delay Slot Check
+BLTZ2,BLTZ,mjnwlc,Negative Branch + No Branch + Delay Slot Checkl
+BLTZ3,BLTZ,mjnwlc,Jump Out of Memory Negative
+BLTZ4,BLTZ,mjnwlc,Jump Out of Bounds Positive
+BLTZAL1,BLTZAL,mjnwlc,Positive Branch + No Branch + Delay Slot Check + Link Check
+BLTZAL2,BLTZAL,mjnwlc,Negative Branch + No Branch + Delay Slot Check + Link Check
+BLTZAL3,BLTZAL,mjnwlc,Branch Out of Bounds Negative
+BLTZAL4,BLTZAL,mjnwlc,Branch Out of Bounds Positive
+BNE1,BNE,mjnwlc,Positive Branch + Delay Slot Check
+BNE2,BNE,mjnwlc,Negative Branch + No Branch + Delay Slot Check
+BNE3,BNE,mjnwlc,Jump Out of Bounds Negative
+BNE4,BNE,mjnwlc,Jump Out of Bounds Positive
+DIV1,DIV,mjnwlc,(Regular Division) 1967556744/605365266 then LO + HI
+DIV2,DIV,mjnwlc,(Signed Division) -7/-3
+DIV3,DIV,mjnwlc,(Signed Division) -7/3
+DIV4,DIV,mjnwlc,(Signed Division) 7/-3
+DIVU1,DIVU,mjnwlc,(Regular Division) 1967556744/605365266
+DIVU2,DIVU,mjnwlc,(Interpreted Signed Division) -7/-3 
+DIVU3,DIVU,mjnwlc,(Interpreted Signed Division) -7/3
+DIVU4,DIVU,mjnwlc,(Interpreted Signed Division) 7/-3
+GETC1,GETC,mjnwlc,Getchar all loads (A-G EOF H)
+GETC2,GETC,mjnwlc,Getchar unaligned LH
+GETC3,GETC,mjnwlc,Getchar unaligned LHU
+GETC4,GETC,mjnwlc,Getchar unaligned LB
+GETC5,GETC,mjnwlc,Getchar unaligned LBU
+J1,J,mjnwlc,Large Jump
+J2,J,mjnwlc,Small Jump
+JAL1,JAL,mjnwlc,Large Jump
+JAL2,JAL,mjnwlc,Small Jump
+JALR1,JALR,mjnwlc,JALR 0 Store in R6 Settle Delay Slot
+JALR2,JALR,mjnwlc,JALR R1 R1 = 0x10000010 Default Store in 31
+JR1,JR,mjnwlc,JR 0 Settle Delay Slot
+JR2,JR,mjnwlc,JR R1 R1 = 0x10000010 Delay Slot Check
+LB1,LB,mjnwlc,Store and load 0xCD (-51)
+LB2,LB,mjnwlc,LB out of bounds
+LB3,LB,mjnwlc,LB from first instruction
+LBU1,LBU,mjnwlc,Store and load CD (205)
+LBU2,LBU,mjnwlc,LBU out of bounds
+LBU3,LBU,mjnwlc,LBU from first instruction
+LH1,LH,mjnwlc,Store and load ABCD (-21555)
+LH2,LH,mjnwlc,LH out of bounds
+LH3,LH,mjnwlc,LH from first instruction
+LH4,LH,mjnwlc,LH unaligned
+LHU1,LHU,mjnwlc,Store and load ABCD (43981)
+LHU2,LHU,mjnwlc,LHU out of bounds
+LHU3,LHU,mjnwlc,LHU from first instruction
+LHU4,LHU,mjnwlc,LHU unaligned
+LUI1,LUI,mjnwlc,0x0
+LUI2,LUI,mjnwlc,0xFFFF
+LW1,LW,mjnwlc,Store and load ABCDABCD (-1412584499)
+LW2,LW,mjnwlc,LW out of bounds
+LW3,LW,mjnwlc,LW from first instruction
+LW4,LW,mjnwlc,LW unaligned
+LWL1,LWL,mjnwlc,LWL out of bounds
+LWLLWR1,LWLLWR,mjnwlc,Normal load word
+LWLLWR2,LWLLWR,mjnwlc,Load bytes 1-4
+LWLLWR3,LWLLWR,mjnwlc,Load bytes 2-5
+LWLLWR4,LWLLWR,mjnwlc,Load bytes 3-6
+LWR1,LWR,mjnwlc,LWR out of bounds
+MULT1,MULT,mjnwlc,(Unsigned) 0x7FFFFFFF * 0x31415926 ADDU HI + LO
+MULT2,MULT,mjnwlc,(Signed) 0xFACEBAFF * 0XDADDB0DD ADDU HI + LO
+MULT3,MULT,mjnwlc,(Signed) 14285 * -7142 ADDU HI + LO
+MULT4,MULT,mjnwlc,(Signed) 0XACEDCODE * 0X23 ADDU HI + LO
+MULT5,MULT,mjnwlc,(Signed) 0x7FFFFFFF * 0x80000000 SLL HI by 29 bits
+MULTU1,MULTU,mjnwlc,(Unsigned) 0x7FFFFFFF * 0x31415926 HI + LO
+MULTU2,MULTU,mjnwlc,(Interpreted Signed) 0xFACEBAFF * 0xDADDB0DD ADDU HI + LO
+MULTU3,MULTU,mjnwlc,(Interpreted Signed) 14285 * -7412 ADDU HI + LO
+MULTU4,MULTU,mjnwlc,(Interpreted Signed) 0xACEDC0DE * 0X23 ADDU HI + LO
+OR1,OR,mjnwlc,0x0 | 0x0
+OR2,OR,mjnwlc,0xAAAAAAAA | 0x55555555
+OR3,OR,mjnwlc,0x0FFFFFFF | 0x0FFFFFFF
+ORI1,ORI,mjnwlc,0x0 | 0x0
+ORI2,ORI,mjnwlc,0xAAAAAAAA | 0x5555
+ORI3,ORI,mjnwlc,0x0FFFFFFF | 0xFFFF
+PUTC1,PUTC,mjnwlc,Putchar XXX
+REG1,REG,mjnwlc,Reading and Writing Registers
+SB1,SB,mjnwlc,Store and load CD (-51)
+SB2,SB,mjnwlc,SB out of bounds
+SH1,SH,mjnwlc,Store and load ABCD (-21555)
+SH2,SH,mjnwlc,SH out of bounds
+SH3,SH,mjnwlc,SH unaligned
+SLL1,SLL,mjnwlc,0x0 << 16
+SLL2,SLL,mjnwlc,0xFFFF << 16
+SLL3,SLL,mjnwlc,0xFFFFFFFF << 16
+SLL4,SLL,mjnwlc,0xFFFFFFFF << 31
+SLLV1,SLLV,mjnwlc,0x0 << 16
+SLLV2,SLLV,mjnwlc,0xFFFF << 16
+SLLV3,SLLV,mjnwlc,0xFFFFFFFF << 16
+SLLV4,SLLV,mjnwlc,0xFFFFFFFF << 31
+SLLV5,SLLV,mjnwlc,0xFFFFFFFF << 10000 (same as shifting by 1 0000)
+SLT1,SLT,mjnwlc,0xFFFFFFFE < 0xFFFFFFFF
+SLT2,SLT,mjnwlc,0xFFFFFFFF < 0x80000000
+SLT3,SLT,mjnwlc,0x7FFFFFFF < 0x80000000
+SLT4,SLT,mjnwlc,0x7FFFFFFF < 0x7FFFFFFE
+SLT5,SLT,mjnwlc,0xFFFFFFFF < 0xFFFFFFFF
+SLTI1,SLTI,mjnwlc,0xFFFFFFFE < 0xFFFF
+SLTI2,SLTI,mjnwlc,0xFFFFFFFF < 0x8000
+SLTI3,SLTI,mjnwlc,0x7FFFFFFF < 0xFFFF
+SLTI4,SLTI,mjnwlc,0x7FFFFFFF < 0x7FFF
+SLTI5,SLTI,mjnwlc,0x7FFF < 0x7FFF
+SLTI6,SLTI,mjnwlc,0x7FFE < 0x7FFF
+SLTI7,SLTI,mjnwlc,0xFFFF < 0xFFFF
+SLTIU1,SLTIU,mjnwlc,0xFFFFFFFE < 0xFFFF
+SLTIU2,SLTIU,mjnwlc,0xFFFFFFFF < 0x8000
+SLTIU3,SLTIU,mjnwlc,0x7FFFFFFF < 0xFFFF
+SLTIU4,SLTIU,mjnwlc,0x7FFFFFFF < 0x7FFF
+SLTIU5,SLTIU,mjnwlc,0x7FFF < 0x7FFF
+SLTIU6,SLTIU,mjnwlc,0x7FFE < 0x7FFF
+SLTIU7,SLTIU,mjnwlc,0xFFFF < 0xFFFF
+SLTU1,SLTU,mjnwlc,0xFFFFFFFE < 0xFFFFFFFF
+SLTU2,SLTU,mjnwlc,0xFFFFFFFF < 0x80000000
+SLTU3,SLTU,mjnwlc,0x7FFFFFFF < 0x80000000
+SLTU4,SLTU,mjnwlc,0x7FFFFFFF < 0x7FFFFFFE
+SLTU5,SLTU,mjnwlc,0xFFFFFFFF < 0xFFFFFFFF
+SRA1,SRA,mjnwlc,0x8000000 >> 16
+SRA2,SRA,mjnwlc,0x7FFFFFFF >> 16
+SRA3,SRA,mjnwlc,0xFFFFFFFF >> 31
+SRAV1,SRAV,mjnwlc,0x8000000 >> 16
+SRAV2,SRAV,mjnwlc,0x7FFFFFFF >> 16
+SRAV3,SRAV,mjnwlc,0xFFFFFFFF >> 32
+SRAV4,SRAV,mjnwlc,0x7FFF0000 >> 10000 (same as shifting by 16 bits)
+SRL1,SRL,mjnwlc,0x0 >> 16
+SRL2,SRL,mjnwlc,0xFFFF0000 >> 16
+SRL3,SRL,mjnwlc,0xFFFFFFFF >> 16
+SRL4,SRL,mjnwlc,0xFFFFFFFF >> 31
+SRLV1,SRLV,mjnwlc,0x0 >> 16
+SRLV2,SRLV,mjnwlc,0xFFFF0000 >> 16
+SRLV3,SRLV,mjnwlc,0xFFFFFFFF >> 16
+SRLV4,SRLV,mjnwlc,0xFFFFFFFF >> 31
+SRLV5,SRLV,mjnwlc,0xFFFFFFFF >> 10000 (same as shifting 16 bits)
+SUB1,SUB,mjnwlc,0x1 - 0x2
+SUB2,SUB,mjnwlc,0x1 - 0xFFFFFFFF
+SUB3,SUB,mjnwlc,0xFFFFFFFF - 0xFFFFFFFE
+SUB4,SUB,mjnwlc,0xFFFFFFFF - 0x1
+SUB5,SUB,mjnwlc,0x80000000 - 0x1
+SUB6,SUB,mjnwlc,0x0 - 0x80000000
+SUB7,SUB,mjnwlc,0x80000000 - 0x7FFFFFFF
+SUBU1,SUBU,mjnwlc,0x2 - 0x1
+SUBU2,SUBU,mjnwlc,0x1 - 0xFFFFFFFF
+SUBU3,SUBU,mjnwlc,0xFFFFFFFF - 0xFFFFFFFE
+SUBU4,SUBU,mjnwlc,0xFFFFFFFF - 0x1
+SUBU5,SUBU,mjnwlc,0x80000000 - 0x1
+SUBU6,SUBU,mjnwlc,0x0 - 0x80000001
+SUBU7,SUBU,mjnwlc,0x80000000 - 0x7FFFFFFF
+SW1,SW,mjnwlc,Store and load ABCDABCD (-1412584499)
+SW2,SW,mjnwlc,SW out of bounds
+SW3,SW,mjnwlc,SW unaligned
+XOR1,XOR,mjnwlc,0x0 ^ 0x0
+XOR2,XOR,mjnwlc,0xAAAAAAAA ^ 0x55555555
+XOR3,XOR,mjnwlc,0xFFFFFFFF ^ 0xFFFF
+XORI1,XORI,mjnwlc,0x0 ^ 0x0
+XORI2,XORI,mjnwlc,0xAAAAAAAA & 0x5555
+XORI3,XORI,mjnwlc,0xFFFFFFFF ^ 0xFFFF

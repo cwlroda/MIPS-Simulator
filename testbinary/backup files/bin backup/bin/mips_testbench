@@ -1,0 +1,81 @@
+#! /bin/bash
+INPUT=testbinary/input.csv
+IFS=","
+
+if [ -f bin/output.csv ] ; then
+	rm bin/output.csv;
+fi
+
+if [ -f bin/tempcout ] ; then
+	rm bin/tempcout;
+fi
+
+[ ! -f $INPUT ] && { echo "$INPUT file not found!"; exit 99; }
+while read field1 field2 field3 field4 
+do
+	dos2unix -q testbinary/testanswer/$field1.txt testbinary/output/$field1"output.txt";
+	i=testbinary/testbench/$field1.bin
+	j=testbinary/testanswer/$field1.txt
+	k="bin/output/"$field1"output.txt"
+	if [ ! -f $k ] ; then
+		echo " ";
+		echo "ERROR!";
+		echo "bin/output does not contain "$field1"output.txt!";
+		exit 99;
+	fi
+
+	if [ ! -f $i ] ; then
+		echo " ";
+		echo "ERROR!";
+		echo "bin/testbench does not contain $field1.bin!";
+		echo " ";
+		exit 99;
+	fi
+	OUTPUT=$(<testbinary/testanswer/$field1.txt);
+	if [ ! -f $j ] ; then
+		echo " ";
+		echo "ERROR!";
+		echo "bin/testanswer does not contain $field1.txt!";
+		echo " ";
+		exit 99;
+	fi
+	cp $i bin/test/temp.bin;
+
+	if [ -z "$1" ] ; then
+		(printf "%s" "ABCDEFG" "H" | ./bin/mips_simulator bin/test/temp.bin)>bin/tempcout 2>bin/errors/$field1"cerr.txt";
+		RETCODE=$?
+	else
+		if [ -f "$1" ] ; then
+			(printf "%s" "ABCDEFG" "H" | ./$1 bin/test/temp.bin)>bin/tempcout;
+			RETCODE=$?
+		else
+			echo " ";
+			echo "ERROR!";
+			echo "The file $1 does not exist!";
+			echo " ";
+			exit 99;
+		fi
+	fi
+	STDOUT=$(<bin/tempcout);
+	rm bin/tempcout
+	ACOUT=$(<bin/output/$field1"output.txt")
+	if [[ "$RETCODE" == "$OUTPUT" ]] ; then
+		if [[ "$STDOUT" == "$ACOUT" ]] ; then
+			STATUS="Passed";
+		else
+			STATUS="Failed";
+		fi
+	else
+		STATUS="Failed";
+	fi
+	rm bin/test/temp.bin;
+	echo -e "$field1\t" "$field2\t" "$STATUS\t" "$field3\t" "$field4\t";
+	if [[ "$STATUS" == "Failed" ]] ; then
+		echo "Returned $RETCODE instead of expected $OUTPUT";
+	fi
+	printf "%s, %s, %s, %s, %s\n" "$field1" "$field2" "$STATUS" "$field3" "$field4" >> bin/output.csv
+	if [[ "$STATUS" == "Failed" ]] ; then
+		printf "%s, %s\n" "$RETCODE" "$OUTPUT" >> bin/output.csv;
+	fi
+done < $INPUT
+
