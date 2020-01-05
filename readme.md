@@ -4,7 +4,7 @@ MIPS Simulator
 This is a MIPS CPU simulator that accurately executes MIPS-1 big-endian binaries using instructions specified by the MIPS ISA. The list of capabilities is non-exhaustive, but most basic instructions are executable. There is also a rigorous testbench to display the functionality of the simulator. The simulator was primarily coded in C++, while the testbench was developed using ExcelVBA and MIPS. 
 
 Prerequisites
-=====================================
+-------------
 
 When executing testbench, please make sure to have dos2unix installed.
 Failing to do so might lead to errors within the testbench.
@@ -15,7 +15,7 @@ sudo apt install dos2unix
 ```
 
 Environment
-===========
+-----------
 
 The target Environment as of project completion is Ubuntu 18.04, with the standard GNU toolchain
 installed (i.e. `g++`, `make`), standard command line utilities, and
@@ -23,7 +23,7 @@ bash.
 
 
 Simulator Build and Execution
-=============================
+-----------------------------
 
 The compiler is buildable using the command:
 ```
@@ -41,7 +41,7 @@ make simulator
 ```
 
 Testing your own Binaries
-=========================
+-------------------------
 
 You can customise your own MIPS instruction file and convert it into a .bin file.
 To run this file on the simulator:
@@ -50,7 +50,7 @@ bin/mips_simulator <your_file>.bin
 ```
 
 Testbench Input/Output
-======================
+----------------------
 
 As output, the Testbench prints a CSV file to stdout containing the following fields:
 ```
@@ -71,7 +71,7 @@ The meaning of the fields is as follows:
   
   
 Testbench build and executable
-==============================
+------------------------------
 
 The Testbench is buildable using:
 ```
