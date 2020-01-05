@@ -77,10 +77,7 @@ The Testbench is buildable using:
 ```
 make testbench
 ```
-_Note: it is entirely possible that nothing needs to happen when
-this is executed. It is to allow for freedom of implementation._
-
-This should result in an executable called:
+This will create an executable called:
 ```
 bin/mips_testbench
 ```
